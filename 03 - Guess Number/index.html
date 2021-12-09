@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        html {
+          font-family: sans-serif;
+        }
+  
+        body {
+          width: 50%;
+          max-width: 800px;
+          min-width: 480px;
+          margin: 0 auto;
+        }
+  
+        .lastResult {
+          color: white;
+          padding: 3px;
+        }
+      </style>
+    <main>
+        <h1>Guess Number</h1>
+        <p>We have selected a random number between <span id="from">1</span> and <span id="to">100</span>. 
+            See if you can guess it in <span id="attempts">5</span> turns or fewer. 
+            We'll tell you if your guess was too high or too low.
+        </p>
+        <label for="guessField">Enter a guess: </label>
+        <form id="Game">
+            <input type="number" id="number">
+            <input type="submit" value="GENERATE">
+        </form>
+        <br>
+        <div id="output" style="height: 40px"></div>
+        <br>
+        <button id="exitButton">Exit</button>
+        <button id="settingsButton">Settings</button>
+        
+        <form id="Settings" style="display: none;">
+            <label for="numberFrom">From: </label>
+            <input type="number" placeholder="number" id="firstNum">
+            <label for="numberTo">to: </label>
+            <input type="number" placeholder="number" id="secondNum">
+            <br>
+            <input type="number" placeholder="Number of attempts" id="attemptsNum">
+            <input type="submit">
+        </form>
+            
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
