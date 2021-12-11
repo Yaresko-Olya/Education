@@ -96,3 +96,4 @@ function getScore(rating) {
 // console.log(getScore(73)); // -> C
 // console.log(getScore(80)); // -> B
 // console.log(getScore(99)); // -> A
+
