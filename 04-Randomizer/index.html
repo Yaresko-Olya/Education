@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomizer</title>
+    <link href="/main.css"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1 class="center">Randomizer</h1>
+
+        <label for="minNum">Min: </label><br>
+        <input type="number" id="minNum"><br>
+        <label for="maxNum">Max: </label><br>
+        <input type="number" id="maxNum"><br>
+        <input type="button" value="GENERATE" id="generate"><br>
+    
+        <p>Generated number:<br>
+            <span id="generNum"></span></p><br>
+        <button id="resetButton">Reset</button>
+        <script src="script.js"></script>
+</body>
+</html>
