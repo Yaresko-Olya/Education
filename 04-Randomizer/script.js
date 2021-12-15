@@ -19,6 +19,7 @@ generate.addEventListener('click', function () {
     const valueMax = +max.value
     if(previousValue.length === (valueMax - valueMin) + 1){
         generatedNumber.textContent = 'Elements are over'
+        generate.setAttribute('disabled', true);
         return
     }
     let randomNum = randomInteger(valueMin, valueMax)
@@ -36,4 +37,5 @@ reset.addEventListener('click', function (){
     max.value = ''
     previousValue = []
     generatedNumber.textContent = ''
+    generate.removeAttribute('disabled');
 })
