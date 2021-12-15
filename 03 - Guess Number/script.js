@@ -66,9 +66,9 @@ function gameRun(numUser){
     if(numUser === randomNumber) {
         isGameRunning = false;
         return `Поздравляю! Ты угадал задуманное число за ${attempts} попыток.`
-    } else if(attempts > 1 && numUser > randomNumber){
+    } else if(attempts >= 1 && numUser > randomNumber){
         return `Слишком большое число, попробуй меньше. У тебя осталось попыток: ${guesses - attempts} .`
-    } else if(attempts > 1 && numUser < randomNumber){
+    } else if(attempts >= 1 && numUser < randomNumber){
         return `Слишком маленькое число, попробуй больше. У тебя осталось попыток: ${guesses - attempts} .`
     }
 }
