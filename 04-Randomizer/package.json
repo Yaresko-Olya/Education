@@ -2,15 +2,26 @@
   "name": "04-randomizer",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "src/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass ./scss/style.scss ./style.css",
-    "sass:watch": "sass --watch ./scss/style.scss ./style.css"
+    "cmd": "gulp",
+    "build": "yarn cmd default",
+    "watch": "yarn cmd watch",
+    "test": "yarn cmd test",
+    "test:coverage": "nyc --reporter=html yarn test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/gulp": "^4.0.9",
     "sass": "^1.45.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-mocha": "^8.0.0",
+    "gulp-sass": "^5.0.0",
+    "mocha-jsdom": "^2.0.0"
   }
 }
