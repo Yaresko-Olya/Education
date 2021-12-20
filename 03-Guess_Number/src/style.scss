@@ -1,0 +1,29 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 50%;
+    max-width: 520px;
+    min-width: 480px;
+    margin: 0 auto;
+}
+
+.lastResult {
+    color: white;
+    padding: 3px;
+}
+
+.container {
+    padding: 0px 25px 25px 25px ;
+    background: linear-gradient(#4784f7, #caf554);
+    border-style: solid;
+}
+
+.center{
+    text-align:  center;
+}
+
+.settings{
+    margin-top: 15px;
+}

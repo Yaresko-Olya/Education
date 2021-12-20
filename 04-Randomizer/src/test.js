@@ -1,6 +1,5 @@
 const { assert, expect } = require('chai');
 const jsdom = require('mocha-jsdom');
-const { JSDOM } = jsdom;
 const fs = require('fs');
 
 describe('Random number generator', () => {
