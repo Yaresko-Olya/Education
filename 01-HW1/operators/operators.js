@@ -9,7 +9,7 @@ function getSumOrProduct(a,b) {
         }
     return result;
 }
-// console.log (getSumOrProduct (4,7))    
+console.log (getSumOrProduct (4,7))    
 
 //2.	Определить какой четверти принадлежит точка с координатами (х,у)
 
@@ -27,7 +27,7 @@ function getQuarter(x,y) {
   } 
   return result;
 }
-// console.log(getQuarter(-5,0));
+console.log(getQuarter(-5,0));
 
 
 //3.	Найти суммы только положительных из трех чисел
@@ -43,7 +43,7 @@ function sumPositives(a, b, c) {
 
   return result;
 }
-  // console.log(sumPositives(1, 2, 3));
+  console.log(sumPositives(1, 2, 3));
 
 
 
@@ -55,11 +55,11 @@ function sumPositives(a, b, c) {
     }
     return b;
   }
-  // let a = 1,
-  //   b = 2,
-  //   c = 3;
+  let a = 1,
+    b = 2,
+    c = 3;
   
-  // console.log(max(a * b * c, a + b + c) + 3);
+  console.log(max(a * b * c, a + b + c) + 3);
 
 
   //5.	Написать программу определения оценки студента по его рейтингу, на основе следующих правил
@@ -90,10 +90,10 @@ function getScore(rating) {
     
     return result;
 }
-// console.log(getScore(10)); // -> F
-// console.log(getScore(25)); // -> E
-// console.log(getScore(41)); // -> D
-// console.log(getScore(73)); // -> C
-// console.log(getScore(80)); // -> B
-// console.log(getScore(99)); // -> A
+console.log(getScore(10)); // -> F
+console.log(getScore(25)); // -> E
+console.log(getScore(41)); // -> D
+console.log(getScore(73)); // -> C
+console.log(getScore(80)); // -> B
+console.log(getScore(99)); // -> A
 

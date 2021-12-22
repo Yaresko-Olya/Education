@@ -1,18 +1,18 @@
 //1.	Найти сумму четных чисел и их количество в диапазоне от 1 до 99
 
-function numbers() {
+function numbers(from, to) {
   var result = 0;
   var count = 0;
-    for (var i = 1; i < 100; i++) 
+    for (let i = from; i <= to; i++) 
     {
       if (i % 2 === 0){
       result = result + i
       count = count + 1
       }
     }
-    console.log(result, count);
+    return [result, count]
 }
-// numbers()
+
 
 
 
@@ -28,36 +28,39 @@ function primeNumber(check){
   }
   return true;
 }
-// console.log(primeNumber(1));
+console.log(primeNumber(1));
 
 
-// 3 task
+// 3 task (бинарный поиск)
 
-// let input = 15;
-// let root = 0;
-// let max = input;
-// let min = 1;
-// let rounding;
+let input = 15;
 
-// for(let i = 1; i < input; i++) {
-//   rounding = ((max + min) / 2) - (((max + min) % 2) / 2);
-//     let s = rounding * rounding;
-//     if(s == input) {
-//         root = rounding;
-//     } else if(s > input) {
-//         max = rounding;
-//     } else if(s < input) {
-//         min = rounding;
-//     }
-// } root = rounding;
+function getRoot(input){
+  let root = 0;
+  let max = input;
+  let min = 1;
+  let rounding;
+  for(let i = 1; i < input; i++) {
+    rounding = ((max + min) / 2) - (((max + min) % 2) / 2);
+      let mult = rounding * rounding;
+      if(mult == input) {
+          root = rounding;
+      } else if(mult > input) {
+          max = rounding;
+      } else if(mult < input) {
+          min = rounding;
+      }
+  } root = rounding;
+  return root
+}
 
-// console.log(`Корень ${input} равен:`  + root);
+console.log(getRoot(input));
 
 
 
 
 
-//4.
+//4.Вычислить факториал числа n.
 function factorial(n) {
   let result = 1;
   for (let i = 1; i <= n; i++){
@@ -66,7 +69,7 @@ function factorial(n) {
   return result;
 }
 
-// console.log(factorial(10));
+console.log(factorial(4));
 
 
 
@@ -81,12 +84,14 @@ function sumCount(n){
       result = number + result;
     }
     return result
-  }
-  // console.log(sumCount(50));
+}
+console.log(sumCount(42));
 
 
 
-//6.	Вывести число, которое является зеркальным отображением последовательности цифр заданного числа, например, задано число 123, вывести 321.
+/*6.	Вывести число, которое является зеркальным отображением 
+последовательности цифр заданного числа, например, задано число 123, 
+вывести 321.*/
 
   // function getMirror(n){
   //   var nString = n.toString();
@@ -110,4 +115,4 @@ function sumCount(n){
     var nNumber = +result;
     return nNumber;
   }
-  // console.log(getMirror(15));
+  console.log(getMirror(15));

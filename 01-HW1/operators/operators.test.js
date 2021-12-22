@@ -81,3 +81,29 @@ describe('max', function () {
     
 
 });
+
+
+
+describe('getScore', function () {
+    
+    it('F если рейтинг >=0 и <=19', function() {
+        assert.equal(getScore(2), 'F');
+    });
+    it('E если рейтинг >=20 и <=39', function() {
+        assert.equal(getScore(25), 'E'); 
+    });
+
+    it('D если рейтинг >=40 и <=59', function() {
+        assert.equal(getScore(50), 'D');
+    });
+    it('C если рейтинг >=60 и <=74', function() {
+        assert.equal(getScore(65), 'C');
+    });
+    it('B если рейтинг >=75 и <=89', function() {
+        assert.equal(getScore(83), 'B');
+    });
+    it('A если рейтинг >=90 и <=100', function() {
+        assert.equal(getScore(90), 'A');
+    });
+
+});
