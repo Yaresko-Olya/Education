@@ -107,3 +107,12 @@ describe('getScore', function () {
     });
 
 });
+
+
+
+describe('isPalindrome', function () {
+
+    it('The line is read the same from the beginning and from the end to the beginning', function() {
+        assert.equal(isPalindrome('aba'), true);
+    });
+});

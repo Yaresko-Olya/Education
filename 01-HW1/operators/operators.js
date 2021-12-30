@@ -97,3 +97,12 @@ console.log(getScore(73)); // -> C
 console.log(getScore(80)); // -> B
 console.log(getScore(99)); // -> A
 
+
+
+
+
+function isPalindrome(str) {
+  var palin = str.split("").reverse().join("");
+  return palin === str
+}
+console.log(isPalindrome("abba"))
