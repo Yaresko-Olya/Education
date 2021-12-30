@@ -6,16 +6,16 @@ function getCountMassageAndComment(arrObj, authorName) {
     let comment = 0;
 
     let posts = arrObj.filter((obj) => {
-        const kjnbb = obj.author === authorName
-        return kjnbb
+        const findName = obj.author === authorName
+        return findName
     }).length
 
 
     for (let i = 0; i < arrObj.length; i++){
         if (arrObj[i].comments){
             comment = arrObj[i].comments.filter((obj) => {
-                const kjnbb = obj.author === authorName
-                return kjnbb
+                const findName = obj.author === authorName
+                return findName
             }).length
             comment = comment + i
             posts = posts + 1
