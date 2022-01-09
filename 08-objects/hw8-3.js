@@ -89,3 +89,5 @@ let listOfPosts2 = [
 ]
 
 console.log(getCountMassageAndComment(listOfPosts2, 'Rimus'));
+
+module.exports = getCountMassageAndComment;

@@ -30,3 +30,5 @@ let cachedFunc = cache(complexFunction);
 console.log(cachedFunc('foo', 'bar'));
 console.log(cachedFunc('foo', 'bar'));
 console.log(cachedFunc('foo', 'baz'));
+
+module.exports = cachedFunc;
