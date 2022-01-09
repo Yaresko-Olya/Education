@@ -1,0 +1,14 @@
+{
+  "name": "education",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Yaresko-Olya/Education.git",
+  "author": "Yaresko Olha <olya222227181@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
